@@ -88,7 +88,7 @@ public class ConfigFaultLocalizationReport {
   private static List<String> getDefaultSFLFormulas() {
     List<String> sflFormulas = new ArrayList<String>();
     sflFormulas.add(SFLFormulas.BARINEL.name());
-    sflFormulas.add(SFLFormulas.DSTAR.name());
+    sflFormulas.add(SFLFormulas.DSTAR2.name());
     sflFormulas.add(SFLFormulas.OCHIAI.name());
     sflFormulas.add(SFLFormulas.TARANTULA.name());
     return sflFormulas;

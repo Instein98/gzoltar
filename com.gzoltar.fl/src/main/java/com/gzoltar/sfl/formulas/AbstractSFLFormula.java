@@ -67,6 +67,6 @@ public abstract class AbstractSFLFormula implements ISFLFormula {
   /**
    * {@inheritDoc}
    */
-  public abstract double compute(final double n00, final double n01, final double n10,
-      final double n11);
+  public abstract double compute(final double peb, final double feb, final double pe,
+      final double fe);
 }

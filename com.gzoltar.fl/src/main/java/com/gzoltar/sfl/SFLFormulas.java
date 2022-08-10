@@ -16,49 +16,115 @@
  */
 package com.gzoltar.sfl;
 
+import com.gzoltar.sfl.formulas.Ample;
 import com.gzoltar.sfl.formulas.Anderberg;
 import com.gzoltar.sfl.formulas.Barinel;
-import com.gzoltar.sfl.formulas.DStar;
+import com.gzoltar.sfl.formulas.DStar2;
+import com.gzoltar.sfl.formulas.Dice;
+import com.gzoltar.sfl.formulas.ER1a;
+import com.gzoltar.sfl.formulas.ER1b;
+import com.gzoltar.sfl.formulas.ER5c;
+import com.gzoltar.sfl.formulas.Euclid;
+import com.gzoltar.sfl.formulas.GP02;
+import com.gzoltar.sfl.formulas.GP03;
+import com.gzoltar.sfl.formulas.GP13;
+import com.gzoltar.sfl.formulas.GP19;
+import com.gzoltar.sfl.formulas.Goodman;
+import com.gzoltar.sfl.formulas.Hamann;
+import com.gzoltar.sfl.formulas.Hamming;
 import com.gzoltar.sfl.formulas.ISFLFormula;
 import com.gzoltar.sfl.formulas.Ideal;
 import com.gzoltar.sfl.formulas.Jaccard;
+import com.gzoltar.sfl.formulas.Kulczynski1;
 import com.gzoltar.sfl.formulas.Kulczynski2;
+import com.gzoltar.sfl.formulas.M1;
+import com.gzoltar.sfl.formulas.M2;
 import com.gzoltar.sfl.formulas.Naish1;
 import com.gzoltar.sfl.formulas.Ochiai;
 import com.gzoltar.sfl.formulas.Ochiai2;
 import com.gzoltar.sfl.formulas.Opt;
+import com.gzoltar.sfl.formulas.Overlap;
 import com.gzoltar.sfl.formulas.RogersTanimoto;
 import com.gzoltar.sfl.formulas.RusselRao;
 import com.gzoltar.sfl.formulas.SBI;
 import com.gzoltar.sfl.formulas.SimpleMatching;
+import com.gzoltar.sfl.formulas.Sokal;
 import com.gzoltar.sfl.formulas.SorensenDice;
 import com.gzoltar.sfl.formulas.Tarantula;
+import com.gzoltar.sfl.formulas.Wong1;
+import com.gzoltar.sfl.formulas.Wong2;
+import com.gzoltar.sfl.formulas.Wong3;
+import com.gzoltar.sfl.formulas.Zoltar;
 
 public enum SFLFormulas {
 
-  OCHIAI(new Ochiai()),
-
-  OCHIAI2(new Ochiai2()),
-
   TARANTULA(new Tarantula()),
+
+  OCHIAI(new Ochiai()),
 
   JACCARD(new Jaccard()),
 
-  SBI(new SBI()),
-
-  KULCZYNSKI2(new Kulczynski2()),
-
-  SORENSEN_DICE(new SorensenDice()),
-
-  ANDERBERG(new Anderberg()),
-
-  SIMPLE_MATCHING(new SimpleMatching()),
-
-  ROGERS_TANIMOTO(new RogersTanimoto()),
+  AMPLE(new Ample()),
 
   RUSSEL_RAO(new RusselRao()),
 
-  DSTAR(new DStar()),
+  HAMANN(new Hamann()),
+
+  SORENSEN_DICE(new SorensenDice()),
+
+  DICE(new Dice()),
+
+  KULCZYNSKI1(new Kulczynski1()),
+
+  KULCZYNSKI2(new Kulczynski2()),
+
+  SIMPLE_MATCHING(new SimpleMatching()),
+
+  SOKAL(new Sokal()),
+
+  M1(new M1()),
+
+  M2(new M2()),
+
+  ROGERS_TANIMOTO(new RogersTanimoto()),
+
+  GOODMAN(new Goodman()),
+
+  HAMMING(new Hamming()),
+
+  EUCLID(new Euclid()),
+
+  OVERLAP(new Overlap()),
+
+  ANDERBERG(new Anderberg()),
+
+  OCHIAI2(new Ochiai2()),
+
+  ZOLTAR(new Zoltar()),
+
+  WONG1(new Wong1()),
+
+  WONG2(new Wong2()),
+
+  ER5C(new ER5c()),
+
+  GP02(new GP02()),
+
+  GP03(new GP03()),
+
+  GP13(new GP13()),
+
+  GP19(new GP19()),
+
+  SBI(new SBI()),
+
+  DSTAR2(new DStar2()),
+
+  WONG3(new Wong3()),
+
+  ER1A(new ER1a()),
+
+  ER1B(new ER1b()),
 
   OPT(new Opt()),
 

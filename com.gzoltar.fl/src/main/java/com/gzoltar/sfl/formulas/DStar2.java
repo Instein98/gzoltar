@@ -21,7 +21,7 @@ package com.gzoltar.sfl.formulas;
  * 
  * @author Rui Abreu
  */
-public final class DStar extends AbstractSFLFormula {
+public final class DStar2 extends AbstractSFLFormula {
 
   @Override
   public String getName() {
